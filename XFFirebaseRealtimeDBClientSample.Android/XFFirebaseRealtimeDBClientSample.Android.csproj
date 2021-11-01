@@ -3,12 +3,12 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0AD26B8A-2DE6-4A85-9202-E7CAD03C6878}</ProjectGuid>
+    <ProjectGuid>{DE620F1E-A1E2-4713-BB94-E954EA6C23A3}</ProjectGuid>
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TemplateGuid>{c9e5eea5-ca05-42a1-839b-61506e0a37df}</TemplateGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>XFFirebaseRealtimeDBSample.Droid</RootNamespace>
-    <AssemblyName>XFFirebaseRealtimeDBSample.Android</AssemblyName>
+    <RootNamespace>XFFirebaseRealtimeDBClientSample.Droid</RootNamespace>
+    <AssemblyName>XFFirebaseRealtimeDBClientSample.Android</AssemblyName>
     <Deterministic>True</Deterministic>
     <AndroidApplication>True</AndroidApplication>
     <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
@@ -55,6 +55,9 @@
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2196" />
     <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
+    <PackageReference Include="FirebaseDatabase.net">
+      <Version>4.0.6</Version>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
@@ -86,9 +89,9 @@
     <Folder Include="Resources\drawable\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\XFFirebaseRealtimeDBSample\XFFirebaseRealtimeDBSample.csproj">
-      <Project>{9AC5B9AF-BD7B-43F9-A24F-A121FCB55AA0}</Project>
-      <Name>XFFirebaseRealtimeDBSample</Name>
+    <ProjectReference Include="..\XFFirebaseRealtimeDBClientSample\XFFirebaseRealtimeDBClientSample.csproj">
+      <Project>{DB336744-CEF9-482B-921D-DCBCF8216888}</Project>
+      <Name>XFFirebaseRealtimeDBClientSample</Name>
     </ProjectReference>
   </ItemGroup>
  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

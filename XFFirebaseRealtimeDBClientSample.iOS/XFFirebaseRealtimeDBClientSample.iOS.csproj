@@ -5,13 +5,13 @@
     <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{E19210C3-C066-4BE7-8A15-B7B1B86FD746}</ProjectGuid>
+    <ProjectGuid>{255C4138-BD19-4FA6-8C55-640B80B7E962}</ProjectGuid>
     <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TemplateGuid>{6143fdea-f3c2-4a09-aafa-6e230626515e}</TemplateGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>XFFirebaseRealtimeDBSample.iOS</RootNamespace>
+    <RootNamespace>XFFirebaseRealtimeDBClientSample.iOS</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <AssemblyName>XFFirebaseRealtimeDBSample.iOS</AssemblyName>
+    <AssemblyName>XFFirebaseRealtimeDBClientSample.iOS</AssemblyName>
     <MtouchEnableSGenConc>true</MtouchEnableSGenConc>
     <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
     <ProvisioningType>automatic</ProvisioningType>
@@ -126,12 +126,15 @@
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2196" />
     <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
+    <PackageReference Include="FirebaseDatabase.net">
+      <Version>4.0.6</Version>
+    </PackageReference>
   </ItemGroup>
-  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\XFFirebaseRealtimeDBSample\XFFirebaseRealtimeDBSample.csproj">
-      <Project>{9AC5B9AF-BD7B-43F9-A24F-A121FCB55AA0}</Project>
-      <Name>XFFirebaseRealtimeDBSample</Name>
+    <ProjectReference Include="..\XFFirebaseRealtimeDBClientSample\XFFirebaseRealtimeDBClientSample.csproj">
+      <Project>{DB336744-CEF9-482B-921D-DCBCF8216888}</Project>
+      <Name>XFFirebaseRealtimeDBClientSample</Name>
     </ProjectReference>
   </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
